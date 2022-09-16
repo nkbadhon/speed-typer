@@ -15,6 +15,48 @@
         <h1>FAQ</h1>
     </header>
 
+    <menu>
+        <section class="container">
+            <article>
+                <h1>1. Differences between Local storage vs Session storage?</h1>
+                <p>Session Storage objects can be accessed using the sessionStorage read-only property. The difference
+                    between sessionStorage and localStorage is that localStorage data does not expire, whereas
+                    sessionStorage data is cleared when the page session ends.
+
+                    A unique page session gets created once a document is loaded in a browser tab. Page sessions are
+                    valid for only one tab at a time. Pages are only saved for the amount of time that the tab or the
+                    browser is open; they do not persist after the page reloads and restores. A new session is created
+                    each time a tab or window is opened; this is different from session cookies. Each tab/window that is
+                    opened with the same URL creates its own sessionStorage.When you duplicate a tab, the sessionStorage
+                    from the original tab is copied to the duplicated tab. Closing a window/tab ends the session and
+                    clears sessionStorage objects.</p>
+            </article>
+            <article>
+                <h1>2. Differences between Global Scope vs Block Scope?</h1>
+                <p>In a browser environment, the global scope is controlled by the window object while in Node. js, it's
+                    controlled by the global object. Block scopes are what you get when you use if statements, for
+                    statements, and the like.</p>
+            </article>
+            <article>
+                <h1>How does JS event loop works?</h1>
+                <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call
+                    Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call
+                    Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+            </article>
+            <article>
+                <h1>Describe different ways to get undefined.</h1>
+                <p>
+                    * Parameter that is not passed will give undefined. <br>
+                    * If return has nothing on the right side, system will return undefined.<br>
+                    * Property that does not exists of an object will return undefined.<br>
+                    * Accessing array elements outside of the index range will return undefined.<br>
+                    * Deleting an element inside an array
+                    set a value directly to undefined.<br>
+                </p>
+            </article>
+        </section>
+    </menu>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
